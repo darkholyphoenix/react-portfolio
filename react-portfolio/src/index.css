@@ -1,0 +1,30 @@
+.link-icon {
+    color:blue
+}
+
+.link-icon:hover {
+    color: red
+}
+
+.link-icon:active{
+    color:black
+}
+
+.mainImage {
+    background-image: url(./assets/cover/slate.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.projectCard {
+    text-align: center;
+    position: relative;
+}
+
+.profilePic {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}

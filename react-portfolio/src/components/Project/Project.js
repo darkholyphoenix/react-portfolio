@@ -1,18 +1,25 @@
-import React from 'react';
+import React from "react";
 
-const Project = (category) => {
 
-return(
-<div
-            src={require(`../../assets/projects/${category}/${i}.jpg`)}
-            alt={project.name}
-            className="img-thumbnail mx-1"
-            key={project.name}
-          >
-          <h4>{project.name}</h4>
-          </div>
-)
-}
 
+const Project = ({project}, i) => {
+  return (
+    <div className = "projectCard">
+      {console.log(project.image)}
+      <a target = "_blank" href = {project.link}>
+        <img
+        src={project.image} 
+        alt={project.name}
+        className="col-10 img-thumbnail mx-1 project"
+        style={{width: '50%'}}
+        key={i}
+        />
+      {console.log(project.name)}
+      </a>
+      <h3 className ="projectName" >{project.name}</h3>
+      
+    </div>
+  );
+};
 
 export default Project;

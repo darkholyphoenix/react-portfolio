@@ -5,9 +5,9 @@ import Slate from '../../assets/cover/slate.jpg'
 function About() {
 
   return (
-    <section className="my-5" style={{ backgroundImage: `url(${Slate})` }}>
-      <h1 id="about">About Me</h1>
-      <img src={ID} className="my-2" style={{ width: "25%" }} alt="Personal Image" />
+    <section className="my-5 " style={{ backgroundImage: `url(${Slate})` }}>
+      <h1 id="about" style={{color:'white'}}>About Me</h1>
+      <img src={ID} className="my-2 profilePic" style={{ width: "20%" }} alt="Personal Image" />
       <div className="my-2">
         <p style={{color:'white'}}>
         Hello! My name is James Bowen. I am a Full-Stack Web Developer. I am a juris doctorate graduate student of St. Mary's University at San Antonio, TX. I have a Bachelor of Arts degree from the University of Texas at San Antonio. I live in San Antonio, TX. I'm a full stack web developer studied in HTML, CSS, and Javascript.

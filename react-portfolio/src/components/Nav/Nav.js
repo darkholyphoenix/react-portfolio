@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 import Wood from '../../assets/cover/wood.jpg'
+
 
 
 function Nav(props) {
@@ -9,32 +10,37 @@ function Nav(props) {
     setContactSelected,
   } = props;
 
+  useEffect(() => {
+  document.title = contactSelected
+  }, [contactSelected]);
   return (
     <header className="flex-row px-1" style={{ backgroundImage: `url(${Wood})`, color:'white' }}>
       <h2>
         <a>
-           James Bowen
+           James Bowen <br/> Portfolio
         </a>
       </h2>
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
+            <Link to= "/about">
               About me
-            </a>
+            </Link>
           </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
+          <li className={`mx-2`}>
+          <Link to= "/contact">
+              Contact
+            </Link>
           </li>
-          <li classname ="mx-2">
-            <a>
+          <li className ={`mx-2`}>
+          <Link to= "/Portfolio">
               Portfolio
-            </a>
+            </Link>
           </li>
-          <li classname ="mx-2">
-            <a>
+          <li className ={`mx-2`}>
+          <Link to= "/Resume">
               Resume
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
