@@ -1,0 +1,23 @@
+.body{
+    min-height: 100vh;
+}
+
+.about-text {
+    left: 0;
+    line-height: 50px;
+    margin-top: 100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    font-size: 20px;
+}
+
+.profilePic {
+    border-radius: 200px;
+}
+
+.about-title {
+    font-size: 35px;
+    text-align: center;
+}

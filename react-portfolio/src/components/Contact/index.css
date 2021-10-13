@@ -1,0 +1,79 @@
+.body{
+  min-height: 100vh;
+}
+    
+    .title {
+    font-size: 24px;
+    padding: 15px 24px;
+    color: white;
+    background-color: teal;
+    display: inline-block;
+    border-radius: 25px;
+    
+  }
+  
+  .ContactView-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #f0f0f0;
+  }
+  
+  #contact-form {
+    margin: 0;
+    padding: 8px 24px;
+    
+  }
+  .name {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+    padding-right: 40px;
+  }
+  .email {
+    font-size: 30px;
+    margin-top: 4px;
+    color: white;
+  }
+  .message {
+    font-size: 30px;
+    margin-top: 4px;
+    color: white;
+    padding-right: 32px;
+    padding-bottom: 32px;
+  }
+
+  .submit-button{
+    border-radius: 25px;
+  background-color: teal; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  }
+  
+  .text-input {
+    border-radius: 25px;
+    font-size: 25px;
+  }
+  
+  .ContactForm {
+    padding: 8px 24px;
+  }
+  .ContactForm > input,
+  .ContactForm > textarea {
+    display: block;
+    width: 240px;
+    padding: 4px 8px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    border: 1px solid #888;
+    font-size: 14px;
+  }
+  .ContactForm > input.ContactForm-error {
+    border-color: #b30e2f;
+  }

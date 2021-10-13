@@ -1,0 +1,44 @@
+#resume-link-div {
+  color: white;
+}
+
+#resume-link {
+  color: white;
+}
+
+#skills-div {
+  color: white
+}
+
+.skill {
+  color: white;
+}
+
+.skill-name {
+  color: white;
+}
+
+@media (min-width: 0px) {
+
+    #resume-link-div {
+        justify-content: center;
+      }
+      
+      #resume-link {
+        text-decoration: none;
+        color: var(--text-color);
+        margin-bottom: 3rem;
+        font-size: 2rem;
+      }
+      
+      #skills-div {
+        justify-content: center;
+      } 
+      
+      .skill {
+        text-decoration: none;
+        font-size: 2rem;
+        margin-bottom: .5rem;
+      }
+
+}

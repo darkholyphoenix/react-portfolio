@@ -6,6 +6,10 @@ import recipeGame from '../../assets/projects/02.png';
 import teamProfile from '../../assets/projects/04.png';
 import readMe from '../../assets/projects/05.png';
 import eCommerce from '../../assets/projects/06.png'
+import Slate from '../../assets/cover/slate.jpg'
+import './index.css'
+
+
 
 
 
@@ -55,8 +59,9 @@ const Portfolio = ({ category }) => {
   // const currentProjects = projects.filter((project) => project.category === category);
 
   return (
-    <div>
-      <div className="flex-row">
+    <div  href="#Portfolio " className ="portfolio container body" style={{ backgroundImage: `url(${Slate})` }} >
+      <div className="row portfolio">
+        <div className="col-6">
         {console.log('these are my projects', projects)}
         {projects.map((project, i) => (
           <Project
@@ -64,6 +69,7 @@ const Portfolio = ({ category }) => {
           key={"Project #" + i}
           />
         ))}
+        </div>
       </div>
     </div>
   );

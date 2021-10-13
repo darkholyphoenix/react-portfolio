@@ -1,0 +1,29 @@
+.welcome {
+    width: 100px;
+  height: 100px;
+  position: relative
+}
+
+.particles-board {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.welcome-title {
+    display: table-cell;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 60px;
+    padding-left: 285px;
+}
+
+.welcome-text {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 46%;
+    font-size: 20px;
+    padding:50px;
+}

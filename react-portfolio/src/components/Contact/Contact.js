@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-
+import Slate from '../../assets/cover/slate.jpg'
 import { validateEmail } from '../../utils/helpers';
+import './index.css'
 
 function ContactForm() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -34,27 +35,27 @@ function ContactForm() {
   };
 
   return (
-    <section>
-      <h1 data-testid="h1tag">Contact me</h1>
+    <section href ="#Contact" className= "body" style={{ backgroundImage: `url(${Slate})`}}>
+      <h1 data-testid="h1tag" className="title color:'white'">Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+          <label htmlFor="name" className= "name color:'white'">Name:</label>
+          <input type="text" className ="text-input" name="name" defaultValue={name} onBlur={handleChange} />
         </div>
         <div>
-          <label htmlFor="email">Email address:</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+          <label htmlFor="email" className="email color:'white'">Email address:</label>
+          <input type="email" className ="text-input" name="email" defaultValue={email} onBlur={handleChange} />
         </div>
         <div>
-          <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+          <label htmlFor="message" className="message color:'white'">Message:</label>
+          <textarea className ="text-input" name="message" rows="5" defaultValue={message} onBlur={handleChange} />
         </div>
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">Submit</button>
+        <button data-testid="button" className="submit-button" type="submit">Submit</button>
       </form>
     </section>
   );
