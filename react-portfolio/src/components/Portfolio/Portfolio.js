@@ -6,6 +6,7 @@ import recipeGame from '../../assets/projects/02.png';
 import teamProfile from '../../assets/projects/04.png';
 import readMe from '../../assets/projects/05.png';
 import eCommerce from '../../assets/projects/06.png'
+import freeMaps from '../../assets/projects/07.jpg'
 import Slate from '../../assets/cover/slate.jpg'
 import './index.css'
 
@@ -16,6 +17,13 @@ import './index.css'
 const Portfolio = ({ category }) => {
 
   const [projects] = useState([
+    { 
+      name: 'Free-maps',
+      category: 'project',
+      link: 'https://github.com/bleakney/free-maps',
+      image: freeMaps
+
+    },
     { 
       name: 'Photo-Port',
       category: 'project',

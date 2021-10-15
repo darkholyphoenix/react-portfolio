@@ -20,9 +20,10 @@ function App() {
       <Router>
         <NavBar  />
         <Switch>
-		<Route exact path="/">
+		<Route exact path="/react-portfolio" component={Home}>
       	<Home />
     	</Route>
+          <Route exact path="/" component={Home}/>
           <Route path='/about' component={About} />
           <Route path='/contact' component={ContactForm} />
           <Route path='/portfolio' component={Portfolio} />
