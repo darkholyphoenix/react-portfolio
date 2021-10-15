@@ -18,7 +18,7 @@ A employer will look at my Portofolio and determine if I have the skills necessa
 
 
 ## Installation
-No installation is needed just visit at https://darkholyphoenix.github.io/
+No installation is needed just visit at https://darkholyphoenix.github.io/react-portfolio/
 
 
 
