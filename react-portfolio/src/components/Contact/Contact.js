@@ -37,6 +37,7 @@ function ContactForm() {
   return (
     <section href ="#Contact" className= "body" style={{ backgroundImage: `url(${Slate})`}}>
       <h1 data-testid="h1tag" className="title color:'white'">Contact me</h1>
+      
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name" className= "name color:'white'">Name:</label>
@@ -57,7 +58,10 @@ function ContactForm() {
         )}
         <button data-testid="button" className="submit-button" type="submit">Submit</button>
       </form>
+      <h2 data-testid="h1tag" className="title color:'white'">If you wish to contact me directly, send me an email at: j.bowen1821@gmail.com</h2>
     </section>
+    
+    
   );
 }
 
